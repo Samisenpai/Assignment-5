@@ -20,13 +20,13 @@ document.getElementById("button-1").addEventListener('click', function(){
         let logParent = document.getElementById("log-history");
         let logChild = document.createElement("p");
         logChild.classList.add("p-3","rounded-lg", "bg-slate-200", "mb-2", "log-child");
-        logChild.innerText = "You have Complete The Task Add Dark Mode at 12:48:15 PM";
+        logChild.innerText = "You have Complete The Task Fix Mobile Button Issue at 12:48:15 PM";
         
         
         
         logParent.appendChild(logChild);
         if(assignCount <= 0){
-            return alert("yoo");
+            return alert("Congrats!!! You have completed all the Current Task");
         }
         
     }
@@ -68,7 +68,7 @@ document.getElementById("button-2").addEventListener('click', function(){
         
         logParent.appendChild(logChild);
         if(assignCount <= 0){
-            return alert("yoo");
+            return alert("Congrats!!! You have completed all the Current Task");
         }
         
     }
@@ -104,13 +104,13 @@ document.getElementById("button-3").addEventListener('click', function(){
         let logParent = document.getElementById("log-history");
         let logChild = document.createElement("p");
         logChild.classList.add("p-3","rounded-lg", "bg-slate-200", "mb-2", "log-child");
-        logChild.innerText = "You have Complete The Task Add Dark Mode at 12:48:15 PM";
+        logChild.innerText = "You have Complete The Task Optimize Home page  at 12:48:15 PM";
         
         
         
         logParent.appendChild(logChild);
         if(assignCount <= 0){
-            return alert("yoo");
+            return alert("Congrats!!! You have completed all the Current Task");
         }
         
     }
@@ -147,13 +147,13 @@ document.getElementById("button-4").addEventListener('click', function(){
         let logParent = document.getElementById("log-history");
         let logChild = document.createElement("p");
         logChild.classList.add("p-3","rounded-lg", "bg-slate-200", "mb-2", "log-child");
-        logChild.innerText = "You have Complete The Task Add Dark Mode at 12:48:15 PM";
+        logChild.innerText = "You have Complete The Task Add new emoji at 12:48:15 PM";
         
         
         
         logParent.appendChild(logChild);
         if(assignCount <= 0){
-            return alert("yoo");
+            return alert("Congrats!!! You have completed all the Current Task");
         }
         
     }
@@ -189,14 +189,14 @@ document.getElementById("button-5").addEventListener('click', function(){
         let logParent = document.getElementById("log-history");
         let logChild = document.createElement("p");
         logChild.classList.add("p-3","rounded-lg", "bg-slate-200", "mb-2", "log-child");
-        logChild.innerText = "You have Complete The Task Add Dark Mode at 12:48:15 PM";
+        logChild.innerText = "You have Complete The Task Integrate OpenAI API at 12:48:15 PM";
         
         
         
         logParent.appendChild(logChild);
 
         if(assignCount <= 0){
-            return alert("yoo");
+            return alert("Congrats!!! You have completed all the Current Task");
         }
         
     }
@@ -232,14 +232,14 @@ document.getElementById("button-6").addEventListener('click', function(){
         let logParent = document.getElementById("log-history");
         let logChild = document.createElement("p");
         logChild.classList.add("p-3","rounded-lg", "bg-slate-200", "mb-2", "log-child");
-        logChild.innerText = "You have Complete The Task Add Dark Mode at 12:48:15 PM";
+        logChild.innerText = "You have Complete The Task Improve Job searching at 12:48:15 PM";
         
         
         
         logParent.appendChild(logChild);
 
         if(assignCount <= 0){
-            return alert("yoo");
+            return alert("Congrats!!! You have completed all the Current Task");
         }
         
     }
@@ -254,13 +254,26 @@ document.getElementById("button-6").addEventListener('click', function(){
 });
 
 
+// clear history logic 
+
 document.getElementById("clear-btn").addEventListener("click", function(){
    document.getElementById("log-history").innerHTML = "";
     
-})
+});
+
+// real date time 
+
+// let currentDate = new date();
+// document.getElementById("cuurent-date").innerText = currentDate;
 
 
 
+// backround change 
 
+document.getElementById("bg-changer").addEventListener("click", function(){
+    let colors = ["#00FFFF", "#E0FFFF", "#FF7F50", "#5F9EA0", "#6495ED", "#DC143C", "#8A2BE2"];
+    let randomColor = Math.floor(Math.random() * colors.length);
+    document.getElementById("body").style.backgroundColor = colors[randomColor];
+});
 
 
