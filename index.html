@@ -41,7 +41,7 @@
                <div class="flex items-center gap-9">
                 <div class="flex items-center gap-4 px-5 py-2 rounded-[32px] bg-slate-200">
                     <i class="text-2xl text-blue-600 fa-solid fa-square-check"></i>
-                    <p class="text-xl font-bold">23</p>
+                    <p id="done-count" class="text-xl font-bold">23</p>
                 </div>
 
                 <div class="p-3 rounded-full bg-slate-200">
@@ -63,7 +63,7 @@
                        </div>
                         <div>
                             <p class="text-gray-600">Task assigned</p>
-                            <p class="text-xl font-bold">05</p>
+                            <p id="task-assign" class="text-xl font-bold">06</p>
                         </div>
                     </div>
 
@@ -84,7 +84,7 @@
                         </div>
                         <div>
                             <p>Wed,</p>
-                            <p class="font-bold">Jul 28 2025 </p>
+                            <p id="date" class="font-bold"> </p>
                         </div>
                      </div>
 
@@ -117,7 +117,7 @@
                                 <p class="font-semibold">21 March 2025</p>
                             </div>
                             <div>
-                                <button class="px-5 py-2 text-white bg-blue-600 rounded-lg">Completed</button>
+                                <button id="button-1" class="px-5 py-2 text-white bg-blue-600 rounded-lg">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@
                                 <p class="font-semibold">21 March 2025</p>
                             </div>
                             <div>
-                                <button class="px-5 py-2 text-white bg-blue-600 rounded-lg">Completed</button>
+                                <button id="button-2" class="px-5 py-2 text-white bg-blue-600 rounded-lg">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
                                 <p class="font-semibold">21 March 2025</p>
                             </div>
                             <div>
-                                <button class="px-5 py-2 text-white bg-blue-600 rounded-lg">Completed</button>
+                                <button id="button-3" class="px-5 py-2 text-white bg-blue-600 rounded-lg">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -202,7 +202,7 @@
                                 <p class="font-semibold">21 March 2025</p>
                             </div>
                             <div>
-                                <button class="px-5 py-2 text-white bg-blue-600 rounded-lg">Completed</button>
+                                <button id="button-4" class="px-5 py-2 text-white bg-blue-600 rounded-lg">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -230,7 +230,7 @@
                                 <p class="font-semibold">21 March 2025</p>
                             </div>
                             <div>
-                                <button class="px-5 py-2 text-white bg-blue-600 rounded-lg">Completed</button>
+                                <button id="button-5" class="px-5 py-2 text-white bg-blue-600 rounded-lg">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -258,23 +258,27 @@
                                 <p class="font-semibold">21 March 2025</p>
                             </div>
                             <div>
-                                <button class="px-5 py-2 text-white bg-blue-600 rounded-lg">Completed</button>
+                                <button id="button-6" class="px-5 py-2 text-white bg-blue-600 rounded-lg">Completed</button>
                             </div>
                         </div>
                     </div>
                  </div>
             </section>
 
-            <section class="col-span-3 bg-white rounded-lg activity-log">
+            <section id="" class="col-span-3 bg-white rounded-lg activity-log">
                 <div>
                     <div class="flex items-center justify-center gap-2 mt-4 mb-4">
                         <img src="./assets/activity.png" alt="">
                         <p class="text-xl">Activity</p>
                     </div>
                     <div class="flex items-center justify-center mb-3">
-                        <button class="px-5 py-3 font-semibold text-white bg-blue-600 rounded-lg">Clear History</button>
+                        <button id="clear-btn" class="px-5 py-3 font-semibold text-white bg-blue-600 rounded-lg">Clear History</button>
                     </div>
-                    <div class="border-b border-gray-400 border-dashed">
+                    <div class="border-b border-gray-400">
+
+                    </div>
+
+                    <div class="m-3" id="log-history">
 
                     </div>
                 </div>
@@ -283,7 +287,8 @@
 
     </section>
 
-
+    <script src="./js/utilities.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
 </html>
