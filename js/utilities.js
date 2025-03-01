@@ -10,3 +10,18 @@ function disableBtn(id){
     return disabledBtn;
 }
 
+
+// real date time 
+
+let currentDate = new Date();
+document.getElementById("current-date").innerText = currentDate.toDateString();
+
+
+    let realTime = new Date();
+
+    let hours = realTime.getHours();
+    let minutes = realTime.getMinutes();
+
+    let time = `${hours}:${minutes}`;
+
+
